@@ -1,21 +1,50 @@
 html, body {
   overflow-x: hidden;
 }
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.eot');
+  src: local('Montserrat'), local('Montserrat'), url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Norwester';
+  src: url('fonts/Norwester-Regular.eot');
+  src: local('Norwester'), local('Norwester'), url('fonts/Norwester-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('fonts/Kollektif.eot');
+  src: local('Kollektif'), local('Kollektif'), url('fonts/Kollektif.ttf') format('truetype');
+}
+
 body {
-  font-family:"Montserrat", Helvetica, Arial, sans-serif;
+  font-family:"Montserrat-Regular", Helvetica, Arial, sans-serif;
   color:#333333;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Name Here", Helvetica, Arial, sans-serif;
+h1 {
+  font-family: "Norwester-Regular", Helvetica, Arial, sans-serif;
+}
+h2, h3, h4, h5, h6 {
+  font-family: "Kollektif", Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 p {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 26px;
   font-weight: 100;
 }
 
