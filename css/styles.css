@@ -75,6 +75,14 @@ p {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 320px); {
+
+}
+
+@media (min-width: 600px); {
+
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
