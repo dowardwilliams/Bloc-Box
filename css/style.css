@@ -209,7 +209,7 @@ header .hero h1 {
 }
 header .hero p {
   font-size: 18px;
-  line-height: 28px
+  line-height: 28px;
   font-weight: 100;
   margin:10px 0 40px;
 }
@@ -238,6 +238,11 @@ header .hero img {
   display:block;
   position:relative;
   }
+.benefits-bkg {
+  width: auto;
+  height: 344px;
+  background-color:#ffffff;
+  }
 .benefits ul {
   margin: 0 auto;
   padding:4em 0;
@@ -259,8 +264,8 @@ header .hero img {
   /* PRICING */
 
 .pricing {
-  background: #5678b7 url("../images/pricing-bkg.png") top center no-repeat;
-  background: url("../images/pricing-bkg.png") top center no-repeat, linear-gradient(206deg, #010431 0%, #5678b7 94%);
+  background: #5678b7 url("../images/background.png") top center no-repeat;
+  background: url("../images/background.png") top center no-repeat, linear-gradient(206deg, #010431 0%, #5678b7 94%);
   background-size:cover;
   text-align: center;
   padding:4em 0;
