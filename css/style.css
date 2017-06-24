@@ -164,7 +164,7 @@ p {
 /* HEADER */
 
 header {
-  color: #ffffff;
+  color: #FFFFFF;
   background: #5678b7;
   background-image: linear-gradient(30deg, #010431 0%, #5678b7 100%);
 }
@@ -241,7 +241,7 @@ header .hero img {
 .benefits-bkg {
   width: auto;
   height: 344px;
-  background-color:#ffffff;
+  background-color:#FFFFFF;
   }
 .benefits ul {
   margin: 0 auto;
@@ -258,28 +258,28 @@ header .hero img {
   veritcal-align: middle;
   }
 .benefits h2 {
-  color:#00aeef;
+  color:#00AEEF;
   }
 
   /* PRICING */
 
 .pricing {
-   background: #34495E url("../images/pricing-bkg-duotone.jpg") top center no-repeat;
-   background: url("../images/pricing-bkg-duotone.jpg") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background: #010431 url("../images/pricing-bkg-duotone.jpg") top center no-repeat;
+   background: url("../images/pricing-bkg-duotone.jpg") top center no-repeat, linear-gradient(206deg, #5F81A3 0%, #010431 94%);
    background-size:cover;
    text-align: center;
    padding:4em 0;
- }
+  }
  .pricing h2, .pricing p {
    color:#FFFFFF;
- }
+  }
  .pricing ul {
    margin:0 auto;
    padding:2em 0;
- }
+  }
  .pricing ul li {
    list-style-type: none;
- }
+  }
   .box {
    padding:0 15px 15px;
    background: #FFFFFF;
@@ -287,11 +287,11 @@ header .hero img {
    min-height: 439px;
    position: relative;
    margin-top: 25px;
- }
+  }
  .box.middle {
    min-height: 485px;
    margin-top:0px;
- }
+  }
  .box h3 {
    font-family: "Lato", Helvetica, Arial, sans-serif;
    font-weight: 600;
@@ -304,41 +304,41 @@ header .hero img {
    text-align: center;
    margin:0 -15px 40px;
    padding:10px 0;
- }
+  }
  .box h4 {
    font-size:50px;
    font-weight: normal;
    margin:40px 0 10px;
    color:#3498DB;
- }
+  }
  .box h4 span {
    font-size:32px;
    vertical-align: top;
- }
+  }
  .box h4 span.month {
    font-family: "Kollektif", Helvetica, Arial, sans-serif;
    font-weight: 100;
    color:#888888;
    font-size:20px;
    vertical-align: middle;
- }
+  }
  .box ul li {
    font-size:18px;
    margin-bottom:20px;
    font-weight: 100;
- }
+  }
   .box .btn {
    position:absolute;
    bottom:20px;
    left:20px;
    right:20px;
- }
+  }
   .small {
    font-size: 12px;
    color: #FEFEFE;
    line-height: 15px;
    font-style:italic;
- }
+  }
 
 /* TESTIMONIALS */
 
@@ -353,7 +353,7 @@ header .hero img {
   list-style-type: none 
   }
 .testimonials blockquote {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: left;
   font-style: italic;
   background: #02396e;
@@ -371,13 +371,13 @@ header .hero img {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-top-color: #02396e;
+  border-top-color: #02396E;
   border-width: 10px;
   margin-left: -10px;
   }
 .drop-down {
   margin-top: 20px;
-}
+ }
 .testimonials img {
   height: 65px;
   width:65px;
@@ -396,49 +396,52 @@ header .hero img {
 
   /* FOOTER */
 
-.footer {
-  background-color: #5678b7;
-  color: #ffffff;
-  height: 150px;
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
-.footer p, footer nav ul {
-  font-size:14px;
-  font-weight:100;
-  text-align: center;
-  margin: 10px auto 0;
-}
-.footer nav ul li {
-  list-style-type: none;
-  display: inline;
-}
-.footer nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer .right-footer-block {
-  background-color: transparent;
-}
-.footer .logo {
-  padding: 2.35em 0;
-  margin: 0 auto;
-  display: block;
-}
-@media (min-width: 992px){
-  footer{
-    background-color: #5678b7;
-    height: 100px;
-  }
-  footer p, footer nav ul{
-    padding: 2em 0;
-    text-align:left;
-  }
-  footer .right-footer-block{
-    background-color: #5678b7;
-  }
-  footer .logo{
-    padding: 2em 0 2em 1.5em;
-  }
-}
+ footer {
+   background-color: #010431;
+   background-image: linear-gradient(to top, #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+   }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+   }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+   }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+   }
+ footer .right-footer-block {
+   background-color: transparent;
+   }
+ footer .logo {
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
+   }
+
+ @media (min-width: 992px){
+   footer{
+     background-color: #3498DB;
+     background-image: linear-gradient(to left, #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #3498DB;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
+ }
