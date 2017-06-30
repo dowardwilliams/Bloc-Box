@@ -104,61 +104,76 @@ p {
 /* GRID */
 
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
 }
-.container:before
+.container:before,
 .container:after {
-  content: " ";
-  display: table;
+   content: " ";
+   display: table;
 }
 .container:after {
-  clear: both;
+   clear: both;
 }
-.one-half, .one-third, .one-fourth {
-  width:96%;
-  float:left;
-  position:relative;
-  min-height: 1px;
-  margin:0 2% 20px;
+.one-half {
+   width:46%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
 }
-
-/* MEDIA QUERIES */
-
-@media (min-width: 320px); {
-
-}
-
-@media (min-width: 600px); {
-
+.one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+   .container {
+     width: 750px;
+   }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
 }
 @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+}
+
+/*Extra big for Twitter Bootstrap*/
+
+@media screen and (min-width: 1400px) {
   .container {
-    width: 1170px;
+    width: 1370px;
   }
 }
-.one-half {
-    width: 46%;
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
 }
-.one-third{
-    width: 29.333%;
-}
-.one-fourth {
-    width: 21%;
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
 }
 
 /* HEADER */
@@ -394,6 +409,7 @@ header .hero img {
   margin-top: 30px;
   }
 
+
   /* FOOTER */
 
  footer {
@@ -410,6 +426,7 @@ header .hero img {
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
+   -webkit-padding-start: 0;
    }
  footer nav ul li {
    list-style-type: none;
@@ -418,6 +435,10 @@ header .hero img {
  footer nav ul li a {
    color:#FFFFFF;
    text-decoration: none;
+   }
+ footer .left-footer-block.one-third,
+ footer .link-block.middle-footer-block.one-third {
+  margin-bottom: 0;
    }
  footer .right-footer-block {
    background-color: transparent;
@@ -437,6 +458,9 @@ header .hero img {
    footer p, footer nav ul{
      padding: 2em 0;
      text-align: left;
+   }
+   footer .left-footer-block.one-third p {
+     font-size: 14px;
    }
    footer .right-footer-block {
      background-color: #3498DB;
