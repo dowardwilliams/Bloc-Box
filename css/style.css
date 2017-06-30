@@ -409,7 +409,20 @@ header .hero img {
   margin-top: 30px;
   }
 
+  /* TRIAL */
 
+  .trial {
+    padding: 4em 0 6em;
+    text-align: center;
+    background: rgb(240, 240, 240);
+  }
+  .trial p{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+  
   /* FOOTER */
 
  footer {
