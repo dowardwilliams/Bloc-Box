@@ -502,7 +502,7 @@ header .hero img {
     position: fixed;
     display:block;
   }
-  .left-nav .site-logo {
+  .left-nav .logo {
     padding:20px 0;
     background:#34495E;
     display:block;
@@ -692,6 +692,6 @@ header .hero img {
      }
      .content-item {
        width:23%;
-       mergin:0 1% 25px;
+       margin:0 1% 25px;
      }
    }
