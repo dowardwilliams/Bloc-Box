@@ -123,14 +123,14 @@ p {
    float:left;
    position:relative;
    min-height: 1px;
-   margin:0 2% 20px;
+   margin:0 2% 10px;
 }
 .one-third, .one-fourth {
    width:96%;
    float:left;
    position:relative;
    min-height: 1px;
-   margin:0 2% 20px;
+   margin:0 2% 10px;
 }
 
 @media (min-width: 768px) {
@@ -184,33 +184,44 @@ header {
   background-image: linear-gradient(30deg, #010431 0%, #5678b7 100%);
 }
 header nav {
-  padding: 1em 0;
+   padding:1em 0;
 }
 header nav ul {
-  display:inline;
-  text-align: right;
-  float:right;
-  margin:0;
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+   -webkit-margin-before: 0 !important;
+   -webkit-padding-start: 0 !important;
 }
 header nav ul > li {
-  list-style-type: none;
-  display:inline-block;
-  margin:0 15px;
+   list-style-type: none;
+   display: inline-block;
+   margin:0 5px;
+}
+
+@media (min-width: 768px) {
+  header nav ul {
+    -webkit-padding-start: 40px !important;
+  }
+  header nav ul > li {
+    margin:0 15px;
+  }
 }
 header nav ul > li.btn-outline {
-  padding:10px 15px;
-  border:2px solid #ffffff;
-  border-radius: 4px;
+   padding:10px 15px;
+   border:2px solid #FFFFFF;
+   border-radius: 4px;
 }
 header nav ul > li.btn-outline:hover {
-  background:#ffffff;
+   background:#FFFFFF;
 }
 header nav ul > li > a {
-  color:#ffffff;
-  text-decoration: none;
+   color:#FFFFFF;
+   text-decoration: none;
 }
 header nav ul > li.btn-outline:hover > a {
-  color:#5678b7;
+   color:#34495E;
 }
 header .hero {
   text-align: center;
