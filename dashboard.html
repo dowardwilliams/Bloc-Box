@@ -16,11 +16,13 @@
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/font-awesome.css">
  <link rel="stylesheet" href="css/animate.css">
+ <link rel="stylesheet" href="css/dropit.css">
 
 </head>
-
 <body class="dashboard">
 
+  <!-- RESPONSIVE NAV -->
+  <a href="#" class="hamburger" id="menu">&#9776;</a>
   <!-- LEFT NAV -->
 
  <nav id="left nav" class="left-nav">
@@ -42,7 +44,7 @@
    </div>
    <div class="settings">
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
-     <p>Jake Williams</p>
+     <p>John Davis</p>
      <a href="#"><i class="fa fa-cog"></i></a>
    </div>
    </nav>
@@ -55,13 +57,22 @@
       <div class="container">
         <div class="header">
           <h1>All Items</h1>
-          <a href="#" class="btn">+ Add</a>
+            <ul class="menu">
+             <li>
+              <a href="#" class="btn">+ Add</a>
+            <ul>
+              <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+              <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+              <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+            </ul>
+          </li>
+         </ul>
         </div>
       </div>
       <div class="container">
         <div class="content-item">
           <div class="item-box">
-            <img src="https://images.pexels.com/photos/191160/pexels-photo-191160.jpeg">
+            <img src="https://images.pexels.com/photos/191160/pexels-photo-191160.jpeg" alt="Photo">
           </div>
         </div>
         <div class="content-item">
@@ -72,7 +83,7 @@
         </div>
         <div class="content-item">
           <div class="item-box">
-            <h2><a href="#">Need to find a designer</a></h2>
+            <h2><a href="#">Need to Find a Designer</a></h2>
             <p>We have a one-person design team, but are ready to expand. Looking for a second designer.</p>
             <p>Put your recommendations here so we can view all of them...</p>
           </div>
@@ -85,40 +96,47 @@
         </div>
         <div class="content-item">
           <div class="item-box">
-            <img src="https://images.pexels.com/photos/145707/pexels-photo-145707.jpeg">
+            <img src="https://images.pexels.com/photos/145707/pexels-photo-145707.jpeg" alt="record player">
           </div>
         </div>
         <div class="content-item">
           <div class="item-box">
             <h2><a href="#">Testing</a></h2>
-+          <p>I love lamp.</p>
+            <p>I love lamp.</p>
           </div>
         </div>
         <div class="content-item">
           <div class="item-box">
-            <h2><img class="favicon" src="https://www.invisionapp.com/favicon.ico"> <a href="#">invisionapp.com</a></h2>
-+          <p>Free Web &amp; Mobile (iOS, Android) Prototyping and UI Mockup Tool | InVision</p>
+            <h2><img class="favicon" src="https://www.invisionapp.com/favicon.ico"><a href="#">invisionapp.com</a></h2>
+            <p>Free Web &amp; Mobile (iOS, Android) Prototyping and UI Mockup Tool | InVision</p>
           </div>
         </div>
         <div class="content-item">
           <div class="item-box">
-            <img src="https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg">
+            <img src="https://images.pexels.com/photos/159613/ghettoblaster-radio-recorder-boombox-old-school-159613.jpeg" alt="ghetto blaster">
           </div>
         </div>
         <div class="content-item">
           <div class="item-box">
-            <img src="https://images.pexels.com/photos/1836/hand-taking-photo-photography-vintage.jpg">
+            <img src="https://images.pexels.com/photos/1836/hand-taking-photo-photography-vintage.jpg" alt="brownie camera">
           </div>
         </div>
         <div class="content-item">
           <div class="item-box">
-            <h2><a href="#">Why storing inspiration is great</a></h2>
-+          <p>blocbox is a new tool to help collect and store your inspiration and information. From images, to links, to notes like this one, you can keep track of all your favorite things.</p>
+            <h2><a href="#">Why Storing Inspiration is Great...</a></h2>
+            <p>Blocbox is a new tool to help collect and store your inspiration and information. From images, to links, to notes like this one, you can keep track of all your favorite things.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/dropit.js"></script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+    $("#menu").click(function(){
+      $("#left-nav").toggleclass("open", 200);
+    });
+  </script>
 </body>
 </html>
