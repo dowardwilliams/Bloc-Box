@@ -507,7 +507,6 @@ header .hero img {
 
   .left-nav {
     height: 100vh;
-    height: 100%
     width:14.66666667%;
     width:280px;
     color:#FFFFFF;
@@ -645,23 +644,22 @@ header .hero img {
      height:35px;
      width:35px;
      border-radius: 50%;
-     margin-left:10px;
+     margin:10px 10px 12px 10px;
      display: inline-block;
    }
    .left-nav .settings p {
      display: inline-block;
      vertical-align: top;
-     padding-top: 8px;
+     padding-top: 10px;
      font-weight: 400;
-     margin:0 0 0 10px;
+     margin:0 0 10px 10px;
    }
    .left-nav .settings a {
      color:#FFFFFF;
      text-decoration: none;
-     text-align: right;
-     float:right;
-     margin-right: 10px;
-     margin-top: 8px;
+     text-align: left;
+     float: left;
+     margin:0 20px 15px 0;
    }
 
    /* CONTENT */

@@ -8,53 +8,151 @@
  */
 
 /* These styles assume you are using ul and li */
+
+/*
+ * Dropit v1.1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* These styles assume you are using ul and li */
+
 .dropit {
-    list-style: none;
-	  padding: 0;
-	  margin: 15px 0 0;
-    float:right;
-    display:inline-block;
-}
-.dropit .dropit-trigger { position: relative; }
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  float: right;
+  display: inline-block; }
+
+.dropit .dropit-trigger {
+  position: relative; }
+
 .dropit .dropit-submenu {
-    position: absolute;
-    top: 100%;
-    right: 0; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 100px;
-    list-style: none;
-	  padding: 20px;
-	  margin: 20px 0 0;
-}
+  position: absolute;
+  top: 100%;
+  right: 0;
+  /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  min-width: 80px;
+  list-style: none;
+  padding: 20px;
+  margin: 20px 0 0; }
+
 .dropit .dropit-open .dropit-submenu {
     display: block;
     background: #FFFFFF;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 4px; }
+
+.dropit .dropit-open .dropit-submenu:after {
+    content: ' ';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 10px; }
+
+.dropit .dropit-open .dropit-submenu ul {
+    margin: 0 auto; }
+
+.dropit .dropit-open .dropit-submenu li {
+    display: block;
+    margin-bottom: 20px; }
+
+.dropit .dropit-open .dropit-submenu li:last-child {
+    margin-bottom: 0; }
+
+.dropit .dropit-open .dropit-submenu li a {
+    color: #34495E;
+    text-decoration: none;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 100; }
+
+.dropit .dropit-open .dropit-submenu li a i.fa {
+    display: inline-block;
+    width: 1.2em;
+    margin-right: .5em; }
+
+.dropit.pop-north {
+    margin: -2 0 0 0; }
+
+.dropit.pop-north .dropit-submenu {
+    bottom: 0;
+    top: inherit;
+    min-width: 160px;
+    right: -65px; }
+
+.dropit.pop-north .dropit-open .dropit-submenu:after {
+  bottom: -8px;
+  top: inherit;
+  right: 85px;
+  border-width: 8px 8px 0; }
+
+
+/* ACCOUNT SETTINGS MENU */
+
+.account-menu .dropit {
+    list-style: none;
+    padding: 0;
+    margin: 0 0;
+    float:right;
+    display:inline-block;
+}
+.account-menu .dropit .dropit-trigger {
+    position: relative; }
+
+.account-menu .dropit .dropit-submenu {
+    position: absolute;
+    top: -200px;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 140px;
+    list-style: none;
+    padding: 20px;
+    margin: 20px 0 0;
+}
+.account-menu .dropit .dropit-open .dropit-submenu {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
-  content: "";
+
+.account-menu .dropit .dropit-open .dropit-submenu:after {
+  content: " ";
   position: absolute;
-  border-style: solid;
+  /*border-style: solid;
   border-width: 0 8px 8px;
-  border-color: #FFFFFF transparent;
-  display:block;
+  border-color: #FFFFFF transparent;*/
+  display: block;
   width: 0;
   z-index: 1;
-  top: -8px;
+  bottom: -10px;
   right: 10px;
-}
-.dropit .dropit-open .dropit-submenu li {
-  display:block;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
+ }
+
+ .account-menu .dropit .dropit-open .dropit-submenu li {
+  display: block;
   margin-bottom: 20px;
-}
-.dropit .dropit-open .dropit-submenu li:last-child {
+  padding-right:10px;
+ }
+ .account-menu .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0;
-}
-.dropit .dropit-open .dropit-submenu li a {
-  color: #34495E;
+ }
+ .account-menu .dropit .dropit-open .dropit-submenu li a {
+  color:#34495E;
   text-decoration: none;
-  font-family: "", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-}
+  font-family: " ", Helvetica, Arial, sans-serif;
+  font-weight:100;
+ }
