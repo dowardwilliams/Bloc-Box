@@ -6,28 +6,26 @@
   <meta charset="UTF-8">
   <title>Dashboard | Blocbox</title>
 
-  <!-- Google Fonts -->
-
-  <link href=''>
-
   <!-- CSS -->
 
- <link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/font-awesome.css">
- <link rel="stylesheet" href="css/animate.css">
- <link rel="stylesheet" href="css/dropit.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/dropit.css">
 
 </head>
+
 <body class="dashboard">
 
   <!-- RESPONSIVE NAV -->
 
-  <a href="#" class="hamburger" id="menu">&#9776;</a>
+  <a class="hamburger" id="menu" href="#">&#9776;</a>
 
   <!-- LEFT NAV -->
 
- <nav id="left nav" class="left-nav">
+ <nav id="left-nav" class="left-nav">
    <a href="#" class="logo"><img src="images/logo.png" /></a>
    <div class="items">
      <p>Items</p>
@@ -145,7 +143,7 @@
   <script type="text/javascript">
     $(".menu").dropit();
     $("#menu").click(function(){
-    $("#left-nav").toggleclass("open", 200);
+    $("#left-nav").toggleClass("open", 200);
     });
   </script>
 </body>
